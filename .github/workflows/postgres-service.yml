@@ -1,6 +1,10 @@
 name: Postgres Service Example
 
 on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'workflow_dispatch'
   push:
     branches:
     - main
